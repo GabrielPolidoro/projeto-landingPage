@@ -2,16 +2,16 @@
 
 *{
     box-sizing: border-box;
+    
+}
+body{  
+    font-family: 'Roboto', sans-serif;   
     margin: 0;
     padding: 0;
 }
-body{
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    
-}
 
 .main{
+    color: #fff;
     background-color: #1d2437;
     background-image: url('../images/background.png');
 }
@@ -76,7 +76,7 @@ a DIV heroArea foi dividida em 2 partes, LEFT e RIGHT, usamos o "display: flex" 
     background-color: transparent;
 }
 
-.leftside #botao{
+.leftside #button1{
     height: 40px;
     padding: 0 20px;
     margin-left: 10px;
@@ -87,7 +87,7 @@ a DIV heroArea foi dividida em 2 partes, LEFT e RIGHT, usamos o "display: flex" 
     cursor: pointer;
 }
 
-.leftside #botao:hover{
+.leftside #button1:hover{
     opacity: .7;
 }
 
@@ -102,6 +102,7 @@ a DIV heroArea foi dividida em 2 partes, LEFT e RIGHT, usamos o "display: flex" 
 
 
 /****** SECTION INFO ******/
+
 
 .info{
     height: 100px;
@@ -127,12 +128,155 @@ a DIV heroArea foi dividida em 2 partes, LEFT e RIGHT, usamos o "display: flex" 
     margin: 0 10px;
 }
 
-.instructions{
 
+/****** SECTION INSTRUCTIONS ******/
+
+
+.inst-container{
+    margin: auto;
+    max-width: 900px;
+    padding: 70px 0;
+}
+
+.inst-item{
+    border-left: 3px solid #ECF0F3;
+    display: flex;
+}
+
+.inst-circle{
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    background-color: #0071b7;
+    margin-left: -9px;
+}
+
+.inst-text{
+    flex: 1;
+    margin-left: 50px;
+}
+
+.inst-text h2{
+    font-size: 32px;
+    color: #000;
+    margin: -10px 0 30px 0;
+}
+
+.inst-text p{
+    font-size: 16px;
+    line-height: 23px;  
+    color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 70px;
+    width: 560px;
+    text-align: justify;
+}
+
+.inst-item:last-child{
+    border: none;
+}
+
+.inst-item:last-child p{
+    margin: 0;
+    padding: 0;
 }
 
 
+/****** SECTION CTA ******/
+
+/****** flex box utilizado mesma coisa da DIV heroArea ******/
+
+
+.cta{
+    background-color: #1D2437;
+    border-bottom: 2px solid #555;
+}
+
+.cta-container{
+    margin: auto;
+    max-width: 800px;
+    display: flex;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.cta-left{
+    flex: 1;
+    margin-right: 30px;
+}
+
+.cta-right{
+    flex: 1;
+    margin-left: 30px;
+}
+
+.cta-left h2{
+    font-size: 40px;
+    margin: 0;
+}
+
+.cta-left p{
+    font-size: 18px;
+    line-height: 25px;
+    color: #777;
+}
+
+.cta-right #email{
+    height: 40px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    outline: none;
+    background-color: transparent;
+}
+
+.cta-right #button2{
+    height: 40px;
+    padding: 0 20px;
+    width: 100%;
+    color: #fff;
+    background-color: #0071B7;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-right #button2:hover{
+    opacity: .7;
+}
+
+
+/****** FOOTER ******/
+
+
 footer{
-    background-color: rgb(95, 92, 92);
-    height: 300px;
+    background-color: #1D2437;   
+    color: #fff;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 40px 0;
+    max-width: 1070px;
+}
+
+.footer-right{
+    font-size: 16px;
+    color: #777;
+    text-align: right;
+    line-height: 25px;
+}
+
+.footer-right a{
+    color: #777;
+    text-decoration: none;
+}
+
+.footer-right a:hover{
+    text-decoration: underline;
 }
