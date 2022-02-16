@@ -39,6 +39,8 @@ a DIV heroArea foi dividida em 2 partes, LEFT e RIGHT, usamos o "display: flex" 
     flex: 1;
     background-image: url('../images/heroimg.png');
     background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
 }
 
 .leftside{
@@ -279,4 +281,33 @@ footer{
 
 .footer-right a:hover{
     text-decoration: underline;
+}
+
+
+/******  RESPONSIVIDADE ******/
+
+@media (max-width: 1030px) {
+    .main .container{
+        padding: 0 20px;
+    }
+
+    .footer-container{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .heroArea{
+        flex-direction: column-reverse;
+    }
+
+    .heroArea .rightside{
+        height: 300px;
+        flex: none;
+        background-size: auto 100%;
+        background-position-x: center;
+    }
+
 }
