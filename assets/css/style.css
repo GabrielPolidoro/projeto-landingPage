@@ -50,14 +50,12 @@ a DIV heroArea foi dividida em 2 partes, LEFT e RIGHT, usamos o "display: flex" 
 .leftside h1{
     font-size: 42px;
     line-height: 50px;
-    width: 446px;
     height: 150px;
     font-weight: 700;
     margin-top: 50px;
 }
 
 .leftside .subtitle{
-    width: 371px;
     height: 68px;
     font-size: 16px;
     line-height: 23px;  
@@ -169,8 +167,6 @@ a DIV heroArea foi dividida em 2 partes, LEFT e RIGHT, usamos o "display: flex" 
     line-height: 23px;  
     color: rgba(0, 0, 0, 0.5);
     padding-bottom: 70px;
-    width: 560px;
-    text-align: justify;
 }
 
 .inst-item:last-child{
@@ -263,7 +259,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    padding: 40px 0;
+    padding: 60px 0;
     max-width: 1070px;
 }
 
@@ -310,4 +306,66 @@ footer{
         background-position-x: center;
     }
 
+    .heroArea .rightside-linear{
+        background: linear-gradient(360deg, #1D2437 8.92%, rgba(29, 36, 55, 0) 65.85%);
+        width: 100%;
+        height: 100%;
+    }
+
+    .heroArea .leftside h1{
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .heroArea .leftside .subtitle{
+        text-align: center;
+    }
+
+    .leftside #email{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .leftside #button1{
+        width: 100%;
+        margin: 0;
+    }
+
+    .leftside .techs{
+        text-align: center;
+    }
+
+    .info{
+        display: none;
+    }
+
+    .instructions .inst-item{
+        margin: 0 50px;
+    }
+
+    .cta-container{
+        flex-direction: column;
+        margin: 0 30px;
+    }
+
+    .cta-left, .cta-right{
+        margin: 0;
+    }
+  
+    .cta-left{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .footer-container{
+        flex-direction: column;
+    }
+
+    .footer-left{
+        margin-bottom: 30px;
+    }
+
+    .footer-right{
+        text-align: center;
+    }
 }
